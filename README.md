@@ -41,16 +41,16 @@ docker compose logs -f web
 docker compose down
 ```
 
-Then open [http://localhost:3000](http://localhost:3000).
+Then open [http://localhost:8421](http://localhost:8421).
 
 The hidden monthly page is reachable at:
-- [http://localhost:3000/monthly](http://localhost:3000/monthly) (clean URL via `serve.json`)
-- [http://localhost:3000/monthly.html](http://localhost:3000/monthly.html)
+- [http://localhost:8421/monthly](http://localhost:8421/monthly) (clean URL via `serve.json`)
+- [http://localhost:8421/monthly.html](http://localhost:8421/monthly.html)
 
-Override the host port with the `PORT` env var:
+Override the **host** port with the `HOST_PORT` env var (the container always listens on 3000 internally):
 
 ```bash
-PORT=8080 docker compose up -d
+HOST_PORT=9000 docker compose up -d
 ```
 
 Files involved:
