@@ -7,9 +7,12 @@ FROM node:25-alpine AS build
 
 WORKDIR /app
 
-# Install dependencies first (better Docker layer caching)
+# Install dependencies first (better Docker layer caching).
+# We use `npm install` (not `npm ci`) so cross-platform native deps
+# (Tailwind v4 / lightningcss / @emnapi/*) resolve cleanly when the
+# lockfile was generated on a different OS/arch (e.g. macOS → linux).
 COPY package.json package-lock.json ./
-RUN npm ci --no-audit --no-fund
+RUN npm install --no-audit --no-fund
 
 # Copy source and build
 COPY . .
