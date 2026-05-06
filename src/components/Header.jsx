@@ -49,10 +49,10 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://sahajhost.in/checkout/index.php?id=6"
+            href="mailto:male69calcutta@gmail.com?subject=Hosting%20enquiry"
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-brand-500 to-brand-700 text-white font-semibold text-sm shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all"
           >
-            Get Started
+            Contact us
           </a>
           <button
             type="button"
@@ -92,10 +92,10 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="https://sahajhost.in/checkout/index.php?id=6"
+              href="mailto:male69calcutta@gmail.com?subject=Hosting%20enquiry"
               className="mt-2 inline-flex items-center justify-center px-4 py-3 rounded-full bg-gradient-to-r from-brand-500 to-brand-700 text-white font-semibold text-sm"
             >
-              Get Started
+              Contact us
             </a>
           </nav>
         </div>

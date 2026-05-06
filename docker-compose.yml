@@ -8,8 +8,10 @@ services:
     restart: unless-stopped
     # Host port is configurable via HOST_PORT env (default 8899 to match nginx upstream).
     # Container always listens on 3000 internally.
+    # Note: published on all interfaces. Public exposure is blocked by ufw/iptables
+    # on the server (only 80/443 are open), and nginx is the only intended caller.
     ports:
-      - "127.0.0.1:${HOST_PORT:-8899}:3000"
+      - "${HOST_PORT:-8899}:3000"
     environment:
       - NODE_ENV=production
       - PORT=3000

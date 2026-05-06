@@ -91,7 +91,7 @@ index.html                 # SEO meta + JSON-LD + favicon
 
 ## Notes
 
-- Buy buttons link to the existing `https://sahajhost.in/checkout/index.php?id=…` flow — change them when the new backend is ready.
+- Plan CTAs open a `mailto:` to `male69calcutta@gmail.com` with the plan + term in the subject. Wire to a real checkout when ready.
 - Plan prices live in `src/components/Plans.jsx` (`PLAN_DATA`). Update there.
 - The original site was `noindex`. This rebuild is set to `index, follow`. Tweak in `index.html` if needed.
 - To swap any SVG illustration for the original raster, drop the file into `public/images/` and replace the `<HeroArt />` import with `<img src="/images/…" alt="…" />`.

@@ -7,7 +7,6 @@ const PLAN_DATA = {
     domains: '1 + 0',
     db_email: '1',
     io_ep: '1 MB / 20',
-    checkoutId: 6,
     accent: 'from-brand-400 to-brand-600',
     prices: {
       '6 mo': 325,
@@ -22,7 +21,6 @@ const PLAN_DATA = {
     domains: '1 + 1',
     db_email: '2',
     io_ep: '1 MB / 20',
-    checkoutId: 4,
     accent: 'from-brand-500 to-brand-700',
     prices: {
       '6 mo': 650,
@@ -38,7 +36,6 @@ const PLAN_DATA = {
     domains: '5 + 5',
     db_email: '5',
     io_ep: '1 MB / 20',
-    checkoutId: 5,
     accent: 'from-brand-600 to-brand-800',
     prices: {
       '6 mo': 1350,
@@ -170,7 +167,9 @@ export default function Plans() {
               </ul>
 
               <a
-                href={`https://sahajhost.in/checkout/index.php?id=${plan.checkoutId}`}
+                href={`mailto:male69calcutta@gmail.com?subject=${encodeURIComponent(
+                  `Hosting enquiry — ${name} (${term}) · ₹${plan.prices[term].toLocaleString('en-IN')}`,
+                )}`}
                 className={`mt-7 inline-flex w-full items-center justify-center gap-2 px-5 py-3.5 rounded-full font-semibold transition-all ${
                   plan.popular
                     ? 'bg-gradient-to-r from-brand-500 to-brand-700 text-white shadow-lg shadow-brand-500/40 hover:-translate-y-0.5'
@@ -178,7 +177,7 @@ export default function Plans() {
                 }`}
                 style={!plan.popular ? { backgroundColor: '#0d1224' } : undefined}
               >
-                Buy {name}
+                Contact us — {name}
               </a>
             </article>
           ))}
