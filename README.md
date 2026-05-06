@@ -26,6 +26,39 @@ npm run build
 npm run preview
 ```
 
+## Docker
+
+Multi-stage build → small static container served by [`serve`](https://www.npmjs.com/package/serve) (no nginx).
+
+```bash
+# build & run
+docker compose up --build -d
+
+# tail logs
+docker compose logs -f web
+
+# stop
+docker compose down
+```
+
+Then open [http://localhost:3000](http://localhost:3000).
+
+The hidden monthly page is reachable at:
+- [http://localhost:3000/monthly](http://localhost:3000/monthly) (clean URL via `serve.json`)
+- [http://localhost:3000/monthly.html](http://localhost:3000/monthly.html)
+
+Override the host port with the `PORT` env var:
+
+```bash
+PORT=8080 docker compose up -d
+```
+
+Files involved:
+- `Dockerfile` — Node 25 alpine, multi-stage (build → runtime)
+- `serve.json` — `cleanUrls`, long cache for assets, no-cache for HTML, basic security headers
+- `docker-compose.yml` — single `web` service with healthcheck
+- `.dockerignore` — keeps the build context lean
+
 ## Project layout
 
 ```

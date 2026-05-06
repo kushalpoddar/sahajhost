@@ -50,11 +50,11 @@ export default function Footer() {
             Explore
           </h4>
           <ul className="mt-4 space-y-2 text-white/75">
-            <li><a className="hover:text-white" href="#solution">Solution</a></li>
-            <li><a className="hover:text-white" href="#stack">Stack</a></li>
-            <li><a className="hover:text-white" href="#plans">Plans</a></li>
-            <li><a className="hover:text-white" href="#vps">Managed VPS</a></li>
-            <li><a className="hover:text-white" href="#faq">FAQ</a></li>
+            <li><a className="hover:text-white" href="/#solution">Solution</a></li>
+            <li><a className="hover:text-white" href="/#stack">Stack</a></li>
+            <li><a className="hover:text-white" href="/#plans">Plans</a></li>
+            <li><a className="hover:text-white" href="/#vps">Managed VPS</a></li>
+            <li><a className="hover:text-white" href="/#faq">FAQ</a></li>
           </ul>
         </div>
 

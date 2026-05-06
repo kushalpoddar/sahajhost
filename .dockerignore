@@ -1,0 +1,62 @@
+# --- VCS & CI -----------------------------------------------------------
+.git
+.gitignore
+.gitattributes
+.github
+
+# --- Node ---------------------------------------------------------------
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn
+.pnp
+.pnp.js
+
+# --- Build output (we re-build inside the image) ------------------------
+dist
+dist-ssr
+build
+out
+
+# --- Caches -------------------------------------------------------------
+.vite
+.cache
+.parcel-cache
+.turbo
+.swc
+.rollup.cache
+*.tsbuildinfo
+.eslintcache
+
+# --- Env & secrets ------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+
+# --- Docker / Compose ---------------------------------------------------
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+.dockerignore
+
+# --- Editor & OS --------------------------------------------------------
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- Tests / coverage ---------------------------------------------------
+coverage
+.nyc_output
+
+# --- Misc ---------------------------------------------------------------
+README.md
+LICENSE
+*.md

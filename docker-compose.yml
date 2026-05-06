@@ -1,0 +1,21 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sahajhost-web:latest
+    container_name: sahajhost-web
+    restart: unless-stopped
+    # Host port is configurable via HOST_PORT env (default 8421).
+    # Container always listens on 3000 internally.
+    ports:
+      - "${HOST_PORT:-8421}:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/ >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
