@@ -41,11 +41,11 @@ docker compose logs -f web
 docker compose down
 ```
 
-Then open [http://localhost:8421](http://localhost:8421).
+Then open [http://localhost:8899](http://localhost:8899) (only bound to `127.0.0.1` — public traffic comes in via nginx).
 
 The hidden monthly page is reachable at:
-- [http://localhost:8421/monthly](http://localhost:8421/monthly) (clean URL via `serve.json`)
-- [http://localhost:8421/monthly.html](http://localhost:8421/monthly.html)
+- [http://localhost:8899/monthly](http://localhost:8899/monthly) (clean URL via `serve.json`)
+- [http://localhost:8899/monthly.html](http://localhost:8899/monthly.html)
 
 Override the **host** port with the `HOST_PORT` env var (the container always listens on 3000 internally):
 
