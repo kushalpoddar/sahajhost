@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 56" role="img" aria-label="SahajHost">
+  <title>SahajHost</title>
+
+  <defs>
+    <linearGradient id="lg-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5172ff"/>
+      <stop offset="55%" stop-color="#3b58e6"/>
+      <stop offset="100%" stop-color="#2c43b8"/>
+    </linearGradient>
+    <linearGradient id="lg-shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lg-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark -->
+  <g>
+    <rect x="2" y="4" width="48" height="48" rx="14" fill="url(#lg-bg)"/>
+    <rect x="2" y="4" width="48" height="22" rx="14" fill="url(#lg-shine)"/>
+
+    <rect x="11" y="14" width="22" height="6" rx="3" fill="url(#lg-bar)"/>
+    <rect x="11" y="25" width="30" height="6" rx="3" fill="#ffffff" opacity="0.9"/>
+    <rect x="11" y="36" width="26" height="6" rx="3" fill="#ffffff" opacity="0.7"/>
+
+    <circle cx="42" cy="17" r="3" fill="#16c784"/>
+    <circle cx="42" cy="17" r="6" fill="#16c784" opacity="0.25"/>
+  </g>
+
+  <!-- Wordmark: सहज (ink) immediately followed by Host (brand blue) -->
+  <text
+    x="60"
+    y="28"
+    dominant-baseline="central"
+    font-family="'Noto Sans Devanagari', 'Mangal', 'Nirmala UI', 'Kohinoor Devanagari', 'Devanagari MT', system-ui, sans-serif"
+    font-size="34"
+    font-weight="700"
+    fill="#0d1224"
+  >सहज<tspan
+      font-family="Quicksand, 'Helvetica Neue', Arial, system-ui, sans-serif"
+      font-size="34"
+      font-weight="800"
+      fill="#5172ff"
+      letter-spacing="-0.5"
+    >Host</tspan></text>
+</svg>
