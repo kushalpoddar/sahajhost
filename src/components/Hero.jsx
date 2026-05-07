@@ -11,7 +11,6 @@ const FEATURES = [
 export default function Hero() {
   return (
     <section
-      id="top"
       className="relative overflow-hidden gradient-soft pt-12 sm:pt-16 lg:pt-20 pb-20 sm:pb-24"
     >
       {/* decorative blobs */}

@@ -63,11 +63,11 @@ export default function Footer() {
             Legal
           </h4>
           <ul className="mt-4 space-y-2 text-white/75">
-            <li><a className="hover:text-white" href="https://sahajhost.in/aboutus">About us</a></li>
-            <li><a className="hover:text-white" href="https://sahajhost.in/contact-us">Contact us</a></li>
-            <li><a className="hover:text-white" href="https://sahajhost.in/tos">Terms of Service</a></li>
-            <li><a className="hover:text-white" href="https://sahajhost.in/privacy">Privacy Policy</a></li>
-            <li><a className="hover:text-white" href="https://sahajhost.in/refund">Refund Policy</a></li>
+            <li><a className="hover:text-white" href="/aboutus">About us</a></li>
+            <li><a className="hover:text-white" href="/contact-us">Contact us</a></li>
+            <li><a className="hover:text-white" href="/tos">Terms of Service</a></li>
+            <li><a className="hover:text-white" href="/privacy">Privacy Policy</a></li>
+            <li><a className="hover:text-white" href="/refund">Refund Policy</a></li>
           </ul>
         </div>
       </div>
